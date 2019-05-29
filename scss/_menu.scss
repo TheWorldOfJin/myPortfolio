@@ -37,28 +37,35 @@
 
   &-branding {
     width: 30%;
-    background: rgba(#b32000, 0.9);
+    background: rgba(#1DE1DE, 0.9);
     transform: translate3d(0, 100%, 0);
+    line-height: 2;
     @include easeOut;
+
+    .name {
+      font-size: 2rem;
+    }
 
     &.show {
       //Slide in from bottom
       transform: translate3d(0, 0, 0);
+
+      .portrait {
+        width: 150px;
+        height: 150px;
+        background: url(../img/portrait.jpg);
+        background-size: cover;
+        border-radius: 50%;
+        border: solid 3px yellow;
+      }
     }
 
-    .portrait {
-      width: 150px;
-      height: 150px;
-      background: url(../img/portrait.jpg);
-      background-size: cover;
-      border-radius: 50%;
-      border: solid 3px yellow;
-    }
+
   }
 
   &-nav {
     width: 70%;
-    background: rgba(#e4e4e4, 0.95);
+    background: rgba(#A5A5A5, 0.95);
     list-style: none;
     transform: translate3d(0, -100%, 0);
     @include easeOut;
@@ -66,6 +73,12 @@
     &.show {
       //Slide in from top
       transform: translate3d(0, 0, 0);
+
+      .nav-link {
+        text-decoration: none;
+        line-height: 5;
+        font-size: 3rem;
+      }
     }
   }
 }
