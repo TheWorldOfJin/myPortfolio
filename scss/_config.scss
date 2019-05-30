@@ -1,23 +1,36 @@
-$show-home-image: true;
-$home-image: url(../img/main.jpg);
 $color1: #cd1300;
 $color2: #fff;
+$color3: #000;
 
 @mixin easeOut {
   transition: all 0.5s ease-out;
 }
 
 @mixin background {
-  @if $show-home-image {
-    &#main-page {
-      width: 100vw;
-      height: 100vh;
-      color: $color2;
-      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-      background-size: 400% 400%;
-      animation: Gradient 15s ease infinite;
-    }
-  }
+  width: 100vw;
+  height: 100vh;
+  color: $color2;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: Gradient 15s ease infinite;
+}
+
+@mixin typewriter {
+  justify-content: center;
+  font-weight: 300;
+  text-align: center;
+  position: absolute;
+  overflow: hidden;
+  top: 45%;
+  left: 0;
+  right: 0;
+  width: 24em;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(40, end), 
+             blink-caret 0.75s step-end infinite;
 }
 
 @keyframes Gradient {
