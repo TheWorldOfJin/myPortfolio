@@ -4,7 +4,7 @@
   z-index: 3;
   right: 40px;
   top: 50px;
-  color: #fff;
+  color: $color2;
   font-weight: bold;
   cursor: pointer;
   @include easeOut;
@@ -37,7 +37,7 @@
 
   &-branding {
     width: 30%;
-    background: rgba(#1DE1DE, 0.9);
+    background: rgba($color1, 1);
     transform: translate3d(0, 100%, 0);
     line-height: 2;
     @include easeOut;
@@ -59,13 +59,11 @@
         border: solid 3px yellow;
       }
     }
-
-
   }
 
   &-nav {
     width: 70%;
-    background: rgba(#A5A5A5, 0.95);
+    background: rgba($color2, 1);
     list-style: none;
     transform: translate3d(0, -100%, 0);
     @include easeOut;
@@ -76,7 +74,7 @@
 
       .nav-link {
         text-decoration: none;
-        line-height: 5;
+        position: relative;
         font-size: 3rem;
       }
     }

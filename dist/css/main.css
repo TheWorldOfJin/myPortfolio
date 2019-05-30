@@ -47,7 +47,7 @@
     overflow: hidden; }
   .menu-branding {
     width: 30%;
-    background: rgba(29, 225, 222, 0.9);
+    background: #cd1300;
     transform: translate3d(0, 100%, 0);
     line-height: 2;
     transition: all 0.5s ease-out; }
@@ -64,7 +64,7 @@
         border: solid 3px yellow; }
   .menu-nav {
     width: 70%;
-    background: rgba(165, 165, 165, 0.95);
+    background: white;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
@@ -72,7 +72,7 @@
       transform: translate3d(0, 0, 0); }
       .menu-nav.show .nav-link {
         text-decoration: none;
-        line-height: 5;
+        position: relative;
         font-size: 3rem; }
 
 * {

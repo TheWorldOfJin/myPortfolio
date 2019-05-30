@@ -18,7 +18,8 @@ function toggleMenu() {
     menuBranding.classList.add("show");
     navItems.forEach(item => item.classList.add("show"));
 
-    menuBtn.textContent = "CLOSE MENU";
+    menuBtn.textContent = "MAIN";
+    menuBtn.style.color = "#CD1300";
     showMenu = true;
   } else {
     menuBtn.classList.remove("close");
@@ -27,7 +28,8 @@ function toggleMenu() {
     menuBranding.classList.remove("show");
     navItems.forEach(item => item.classList.remove("show"));
 
-    menuBtn.textContent = "SHOW MENU";
+    menuBtn.textContent = "HOME";
+    menuBtn.style.color = "#FFF";
     showMenu = false;
   }
 }
