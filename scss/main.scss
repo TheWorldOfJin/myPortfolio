@@ -9,19 +9,20 @@
 body {
   font-family: Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
-
   #homepage {
-    position: fixed;
-    z-index: 2;
     @include background;
+    @include easeOut;
+    transform: translate3d(0, 0, 0);
+
+    &.hide {
+      transform: rotate(360deg);
+    }
 
     h1.message {
       @include typewriter;
     }
   }
 
-  #main-section{
-    visibility: hidden;
+  #main-section {
   }
-
 }

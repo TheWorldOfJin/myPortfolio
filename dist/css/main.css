@@ -31,12 +31,6 @@
   .menu-btn.close {
     transform: rotate(360deg); }
 
-#homepage {
-  transition: all 0.5s ease-out;
-  transform: translate3d(0, 0, 0); }
-  #homepage.hide {
-    transform: translate3d(0, -100, 0); }
-
 .menu {
   position: fixed;
   width: 100%;
@@ -82,15 +76,19 @@ body {
   font-family: Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body #homepage {
-    position: fixed;
-    z-index: 2;
     width: 100vw;
     height: 100vh;
-    color: #fff;
+    position: absolute;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
-    animation: Gradient 15s ease infinite; }
+    animation: Gradient 15s ease infinite;
+    overflow: hidden;
+    transition: all 0.5s ease-out;
+    transform: translate3d(0, 0, 0); }
+    body #homepage.hide {
+      transform: rotate(360deg); }
     body #homepage h1.message {
+      color: #fff;
       justify-content: center;
       font-weight: 300;
       text-align: center;
@@ -105,5 +103,3 @@ body {
       margin: 0 auto;
       letter-spacing: 0.15em;
       animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite; }
-  body #main-section {
-    visibility: hidden; }

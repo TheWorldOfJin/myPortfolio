@@ -14,14 +14,6 @@
   }
 }
 
-#homepage {
-  @include easeOut;
-  transform: translate3d(0,0,0);
-  &.hide {
-    transform: translate3d(0,-100,0);
-  }
-}
-
 // Menu Overlay
 .menu {
   position: fixed;
