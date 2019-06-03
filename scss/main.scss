@@ -1,5 +1,4 @@
 @import "config";
-@import "menu";
 
 * {
   margin: 0;
@@ -7,16 +6,30 @@
 }
 
 body {
+  width: 100vw;
+  height: 100vh;
   font-family: Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
+
+  // Menu Button
+  .menu-btn {
+    position: absolute;
+    z-index: 3;
+    right: 40px;
+    top: 50px;
+    color: $color2;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    @include easeOut;
+
+    &:hover {
+      color: #cecece;
+    }
+  }
+
   #homepage {
     @include background;
-    @include easeOut;
-    transform: translate3d(0, 0, 0);
-
-    &.hide {
-      transform: rotate(360deg);
-    }
 
     h1.message {
       @include typewriter;
@@ -24,5 +37,57 @@ body {
   }
 
   #main-section {
+    top: 100vh;
+    position: relative;
+
+    section {
+      padding: 100px 0;
+    }
+
+    .section-headline {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    #navigation {
+      background-color: $color1;
+      padding: 20px 10px;
+      z-index: 100;
+      width: 100%;
+    }
+
+    #navigation li {
+      padding: 0 10px;
+    }
+
+    #navigation li a {
+      color: #fff;
+    }
+
+    .navbar-brand,
+    .navbar-brand:hover {
+      color: #fff;
+    }
+
+    .navbar-toggler-icon {
+      background: url(../img/menu.png);
+      background-size: 100%;
+    }
+
+    .fixedNav #navigation {
+      position: fixed;
+      top: 0;
+    }
+
+    #about {
+      .portrait {
+        max-width: 100%;
+      }
+    }
+
+    #skills {
+      background-color: $color1;
+      color: $color2;
+    }
   }
 }

@@ -19,62 +19,27 @@
   50% {
     border-color: orange; } }
 
-.menu-btn {
-  position: absolute;
-  z-index: 3;
-  right: 40px;
-  top: 50px;
-  color: #fff;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.5s ease-out; }
-  .menu-btn.close {
-    transform: rotate(360deg); }
-
-.menu {
-  position: fixed;
-  width: 100%;
-  visibility: hidden; }
-  .menu.show {
-    visibility: visible; }
-  .menu-branding, .menu-nav {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: center;
-    float: left;
-    height: 100vh;
-    overflow: hidden; }
-  .menu-branding {
-    width: 30%;
-    background: #cd1300;
-    line-height: 2; }
-    .menu-branding .name {
-      font-size: 2rem; }
-    .menu-branding .portrait {
-      width: 150px;
-      height: 150px;
-      background: url(../img/portrait.jpg);
-      background-size: cover;
-      border-radius: 50%;
-      border: solid 3px yellow; }
-  .menu-nav {
-    width: 70%;
-    background: white;
-    list-style: none; }
-    .menu-nav .nav-link {
-      text-decoration: none;
-      position: relative;
-      color: #000;
-      font-size: 3rem; }
-
 * {
   margin: 0;
   box-sizing: border-box; }
 
 body {
+  width: 100vw;
+  height: 100vh;
   font-family: Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
+  body .menu-btn {
+    position: absolute;
+    z-index: 3;
+    right: 40px;
+    top: 50px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s ease-out; }
+    body .menu-btn:hover {
+      color: #cecece; }
   body #homepage {
     width: 100vw;
     height: 100vh;
@@ -82,11 +47,7 @@ body {
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
     animation: Gradient 15s ease infinite;
-    overflow: hidden;
-    transition: all 0.5s ease-out;
-    transform: translate3d(0, 0, 0); }
-    body #homepage.hide {
-      transform: rotate(360deg); }
+    overflow: hidden; }
     body #homepage h1.message {
       color: #fff;
       justify-content: center;
@@ -103,3 +64,34 @@ body {
       margin: 0 auto;
       letter-spacing: 0.15em;
       animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite; }
+  body #main-section {
+    top: 100vh;
+    position: relative; }
+    body #main-section section {
+      padding: 100px 0; }
+    body #main-section .section-headline {
+      text-align: center;
+      margin-bottom: 50px; }
+    body #main-section #navigation {
+      background-color: #23a6d5;
+      padding: 20px 10px;
+      z-index: 100;
+      width: 100%; }
+    body #main-section #navigation li {
+      padding: 0 10px; }
+    body #main-section #navigation li a {
+      color: #fff; }
+    body #main-section .navbar-brand,
+    body #main-section .navbar-brand:hover {
+      color: #fff; }
+    body #main-section .navbar-toggler-icon {
+      background: url(../img/menu.png);
+      background-size: 100%; }
+    body #main-section .fixedNav #navigation {
+      position: fixed;
+      top: 0; }
+    body #main-section #about .portrait {
+      max-width: 100%; }
+    body #main-section #skills {
+      background-color: #23a6d5;
+      color: #fff; }
