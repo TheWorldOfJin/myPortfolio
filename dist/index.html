@@ -18,6 +18,8 @@
       crossorigin="anonymous"
     />
 
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Welcome to myPortfolio</title>
   </head>
 
@@ -36,7 +38,7 @@
     <!-- Main Section -->
     <main id="main-section">
       <!-- Navigation Bar -->
-      <nav id="navigation" class="navbar navbar-expand-lg">
+      <nav id="navigation" class="sticky-top navbar navbar-expand-lg">
         <a class="navbar-brand" href="index.html">JINMAN KIM</a>
 
         <button
@@ -51,7 +53,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse navbar-default" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
               <a class="nav-link" href="#about"
@@ -62,7 +64,7 @@
               <a class="nav-link" href="#skills">Skills</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#stats">Projects</a>
+              <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
@@ -75,12 +77,10 @@
       <section id="about" class="container">
         <h4 class="section-headline">Tell me about yourself</h4>
         <div class="row">
-          <div class="col-md-5">
-            <img src="img/portrait.jpg" alt="profile image" class="portrait" />
-          </div>
-          <div class="col-md-7">
-            <p>Hi, my name is Jinman Kim.</p>
-          </div>
+          <p>
+            <img class="portrait" src="img/portrait.jpg" alt="profile image"/>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ad haec, nisi molestum est, habeo quae velim. Quod quidem nobis non saepe contingit. Duo Reges: constructio interrete. Est enim effectrix multarum et magnarum voluptatum. Et si turpitudinem fugimus in statu et motu corporis, quid est cur pulchritudinem non sequamur? Qui autem esse poteris, nisi te amor ipse ceperit? Nos vero, inquit ille; Itaque a sapientia praecipitur se ipsam, si usus sit, sapiens ut relinquat.</br></br>
+            Qui est in parvis malis. Nec lapathi suavitatem acupenseri Galloni Laelius anteponebat, sed suavitatem ipsam neglegebat; Dici enim nihil potest verius. Invidiosum nomen est, infame, suspectum. At iste non dolendi status non vocatur voluptas.</p>
         </div>
       </section>
 
@@ -88,45 +88,47 @@
       <section id="skills" class="fluid">
         <h4 class="section-headline">What kind of skills do you offer</h4>
         <div class="container">
-          <h4 class="section-headline">Skills being focused</h4>
+          <h5 class="section-headline">Skills being focused</h5>
           <div class="row skills-group">
-            <i class="devicon-mongodb-plain colored icon">
+            <i class="col devicon-mongodb-plain colored icon">
               <p class="icon-label">mongoDB</p>
             </i>
 
-            <i class="devicon-express-original colored icon">
+            <i class="col devicon-express-original colored icon">
               <p class="icon-label">Express</p>
             </i>
 
-            <i class="devicon-react-original colored icon">
+            <i class="col devicon-react-original colored icon">
               <p class="icon-label">React</p>
             </i>
 
-            <i class="devicon-nodejs-plain-wordmark colored icon">
-              <p class="icon-label">Node.js</p>
+            <i class=" col devicon-nodejs-plain-wordmark colored icon">
+              <p class="icon-label">node.js</p>
             </i>
           </div>
-          <h4 class="section-headline">Skills being focused</h4>
+          <h5 class="section-headline">Skills being focused</h5>
           <div class="row skills-group">
-            <i class="devicon-bootstrap-plain colored icon">
+            <i class="col devicon-bootstrap-plain colored icon">
               <p class="icon-label">Bootstrap</p>
             </i>
-            <i class="devicon-sass-original colored icon">
+            <i class="col devicon-sass-original colored icon">
               <p class="icon-label">Sass</p>
             </i>
-            <img class="flask-img" src="img/flask.svg" alt="">
-              <p class="icon-label">Flask</p>
-            </img>
-            <i class="devicon-c-plain colored icon">
+            <figure>
+              <img class="col flask-img" src="img/flask.svg" alt="">
+                <figcaption class="icon-label">Flask</figcaption>
+              </img>
+            </figure>
+            <i class="col devicon-c-plain colored icon">
               <p class="icon-label">C</p>
             </i>
-            <i class="devicon-csharp-plain colored icon">
+            <i class="col devicon-csharp-plain colored icon">
               <p class="icon-label">C#</p>
             </i>
-            <i class="devicon-heroku-original colored icon">
+            <i class="col devicon-heroku-original colored icon">
               <p class="icon-label">Heroku</p>
             </i>
-            <i class="devicon-git-plain icon">
+            <i class="col devicon-git-plain colored icon">
               <p class="icon-label">Git</p>
             </i>
           </div>
@@ -142,8 +144,6 @@
       </section>
     </main>
 
-
-
     <!-- JavaScript -->
     <script
       src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
@@ -151,5 +151,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/main.js"></script>
+
   </body>
 </html>

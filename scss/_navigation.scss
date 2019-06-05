@@ -1,0 +1,43 @@
+// Go To Main button
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  right: 40px;
+  top: 50px;
+  color: $color2;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  @include easeOut;
+
+  &:hover {
+    color: #cecece;
+  }
+}
+
+// Navbar
+#navigation {
+  background-color: $color1;
+  padding: 20px 10px;
+  z-index: 100;
+  width: 100%;
+
+  li {
+    padding: 0 10px;
+
+    a {
+      color: #fff;
+    }
+  }
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+  color: #fff;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}

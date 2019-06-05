@@ -19,6 +19,38 @@
   50% {
     border-color: orange; } }
 
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  right: 40px;
+  top: 50px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.5s ease-out; }
+  .menu-btn:hover {
+    color: #cecece; }
+
+#navigation {
+  background-color: #7a7a7a;
+  padding: 20px 10px;
+  z-index: 100;
+  width: 100%; }
+  #navigation li {
+    padding: 0 10px; }
+    #navigation li a {
+      color: #fff; }
+
+.navbar-brand,
+.navbar-brand:hover {
+  color: #fff; }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%; }
+
 * {
   margin: 0;
   box-sizing: border-box; }
@@ -28,18 +60,6 @@ body {
   height: 100vh;
   font-family: Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
-  body .menu-btn {
-    position: absolute;
-    z-index: 3;
-    right: 40px;
-    top: 50px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.5s ease-out; }
-    body .menu-btn:hover {
-      color: #cecece; }
   body #homepage {
     width: 100vw;
     height: 100vh;
@@ -61,48 +81,32 @@ body {
       margin: 0 auto;
       letter-spacing: 0.15em;
       animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite; }
+  body .navbar-toggler-icon {
+    background-image: url(../img/menu.png); }
   body #main-section {
     top: 100vh;
     position: relative; }
     body #main-section section {
       padding: 100px 0; }
       body #main-section section .section-headline {
-        text-align: center;
-        margin-bottom: 50px; }
+        text-align: center; }
     body #main-section .skills-group {
       text-align: center;
       justify-content: center; }
     body #main-section .flask-img {
-      width: 150px;
+      width: 140px;
       height: 100px; }
+    body #main-section .skills-group {
+      margin-bottom: 3rem; }
     body #main-section .icon {
-      font-size: 6rem;
-      margin-right: 6rem; }
+      font-size: 6rem; }
       body #main-section .icon .icon-label {
         font-size: 1.5rem;
-        color: white;
-        text-align: center;
-        margin-top: 5px; }
-    body #main-section #navigation {
-      background-color: #a00000;
-      padding: 20px 10px;
-      z-index: 100;
-      width: 100%; }
-    body #main-section #navigation li {
-      padding: 0 10px; }
-    body #main-section #navigation li a {
-      color: #fff; }
-    body #main-section .navbar-brand,
-    body #main-section .navbar-brand:hover {
-      color: #fff; }
-    body #main-section .navbar-toggler-icon {
-      background: url(../img/menu.png);
-      background-size: 100%; }
-    body #main-section .fixedNav #navigation {
-      position: fixed;
-      top: 0; }
+        margin-top: 5px;
+        position: relative; }
     body #main-section #about .portrait {
-      max-width: 100%; }
-    body #main-section #skills {
-      background-color: #a00000;
-      color: #fff; }
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      float: left;
+      margin-right: 20px; }
