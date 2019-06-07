@@ -6,5 +6,7 @@ var typed = new Typed("#typed", {
 });
 
 AOS.init({
-  duration: 1800
+  duration: 1500,
+  once: "true",
+  easing: "ease-out"
 });
