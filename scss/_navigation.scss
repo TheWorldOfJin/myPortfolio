@@ -1,6 +1,7 @@
 // Go To Main button
 .menu-btn {
   position: absolute;
+  font-size: 1rem;
   z-index: 3;
   right: 40px;
   top: 50px;
@@ -11,7 +12,7 @@
   @include easeOut;
 
   &:hover {
-    color: #cecece;
+    color: $color1;
   }
 }
 
@@ -34,10 +35,4 @@
 .navbar-brand,
 .navbar-brand:hover {
   color: #fff;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
 }

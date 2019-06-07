@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <!-- Style -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       rel="stylesheet"
       href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
@@ -31,6 +32,7 @@
 
     <!-- Home Page Screen -->
     <section id="homepage">
+      <div class="overlay"></div>
       <div id="typed-strings">
         <p>JINMAN KIM</p>
         <p>Full Stack Developer</p>
@@ -78,13 +80,14 @@
       </nav>
 
       <!-- About Section -->
-      <section id="about" class="container">
+      <section id="about" class="container" data-aos="fade-up">
         <h4 class="section-headline">Tell me about yourself</h4>
         <div class="row">
           <p>
             <img class="portrait" src="img/portrait.jpg" alt="profile image"/>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ad haec, nisi molestum est, habeo quae velim. Quod quidem nobis non saepe contingit. Duo Reges: constructio interrete. Est enim effectrix multarum et magnarum voluptatum. Et si turpitudinem fugimus in statu et motu corporis, quid est cur pulchritudinem non sequamur? Qui autem esse poteris, nisi te amor ipse ceperit? Nos vero, inquit ille; Itaque a sapientia praecipitur se ipsam, si usus sit, sapiens ut relinquat.</br></br>
-            Qui est in parvis malis. Nec lapathi suavitatem acupenseri Galloni Laelius anteponebat, sed suavitatem ipsam neglegebat; Dici enim nihil potest verius. Invidiosum nomen est, infame, suspectum. At iste non dolendi status non vocatur voluptas.</p>
+            <strong>Hi, my name is JINMAN</strong> and I'm here to introduce myself as a Full Stack Web Developer.
+            To start, I'm a person who gets really thrilled when solving problems. In doing so, it motivates me towards upper levels of challenges. My promise for you is to find an answer for your issues and simplify your complications.</br></br>
+            In a world of rapid exchange of information, we expect almost no delay of responses. This is why I currently chose to focus on MERN stack.  </p>
         </div>
       </section>
 
@@ -92,47 +95,44 @@
       <section id="skills" class="fluid">
         <h4 class="section-headline">What kind of skills do you offer</h4>
         <div class="container">
-          <h5 class="section-headline">Skills being focused</h5>
+          <h5 class="section-headline">WEB TECHNOLOGIES</h5>
           <div class="row skills-group">
-            <i class="col devicon-mongodb-plain colored icon">
+            <i class="col-md-3 devicon-mongodb-plain colored icon">
               <p class="icon-label">mongoDB</p>
             </i>
-
-            <i class="col devicon-express-original colored icon">
+            <i class="col-md-3 devicon-express-original colored icon">
               <p class="icon-label">Express</p>
             </i>
-
-            <i class="col devicon-react-original colored icon">
+            <i class="col-md-3 devicon-react-original colored icon">
               <p class="icon-label">React</p>
             </i>
-
-            <i class=" col devicon-nodejs-plain-wordmark colored icon">
+            <i class=" col-md-3 devicon-nodejs-plain-wordmark colored icon">
               <p class="icon-label">node.js</p>
             </i>
-          </div>
-          <h5 class="section-headline">Skills being focused</h5>
-          <div class="row skills-group">
-            <i class="col devicon-bootstrap-plain colored icon">
+            <i class="col-md-3 devicon-bootstrap-plain colored icon">
               <p class="icon-label">Bootstrap</p>
             </i>
-            <i class="col devicon-sass-original colored icon">
+            <i class="col-md-3 devicon-sass-original colored icon">
               <p class="icon-label">Sass</p>
             </i>
-            <figure>
-              <img class="col flask-img" src="img/flask.svg" alt="">
+            <i class="col-md-3 devicon-jquery-plain colored icon">
+              <p class="icon-label">jQuery</p>
+            </i>
+            <figure class="col-md-3">
+              <img class="flask-img" src="img/flask.svg" alt="">
                 <figcaption class="icon-label">Flask</figcaption>
               </img>
             </figure>
-            <i class="col devicon-c-plain colored icon">
-              <p class="icon-label">C</p>
+            <i class="col-md-3 devicon-angularjs-plain colored icon">
+              <p class="icon-label">Angular</p>
             </i>
-            <i class="col devicon-csharp-plain colored icon">
+            <i class="col-md-3 devicon-csharp-plain colored icon">
               <p class="icon-label">C#</p>
             </i>
-            <i class="col devicon-heroku-original colored icon">
+            <i class="col-md-3 devicon-heroku-original colored icon">
               <p class="icon-label">Heroku</p>
             </i>
-            <i class="col devicon-git-plain colored icon">
+            <i class="col-md-3 devicon-git-plain colored icon">
               <p class="icon-label">Git</p>
             </i>
           </div>
@@ -143,9 +143,54 @@
       <section id="projects" class="container">
         <h4 class="section-headline">What are your achievements</h4>
         <div class="row">
-          Projects
+
+          <figure class="project">         
+            <div class="col">
+              <img src="img/flaskblog_img.PNG" alt="" class="project-image">
+            </div>
+            <figcaption>Flask Blog</figcaption>
+          </figure> 
+
+          <figure class="project">         
+            <div class="col">
+              <img src="img/DevConnector_img.PNG" alt="" class="project-image">
+            </div>
+            <figcaption>DevConnector</figcaption>
+          </figure> 
+
+          <figure class="project">         
+            <div class="col">
+              <img src="img/tba.PNG" alt="" class="project-image">
+            </div>
+            <figcaption>TBA</figcaption>
+          </figure> 
+
+          <figure class="project">         
+            <div class="col">
+              <img src="img/tba.PNG" alt="" class="project-image">
+            </div>
+            <figcaption>TBA</figcaption>
+          </figure> 
+
+
         </div>
       </section>
+
+      <!-- Contact section -->
+      <section id="contact" class="fluid">
+        <div class="col-md-12 text-center">
+          <p class="subHeading">Like what you see?</p>
+          <h2>I'd love to hear from you!</h2>
+          <a href="mailTo:theworldofjin@gmail.com" class="contactButton">GET IN TOUCH!</a>
+        </div>
+      </section>
+
+      <footer id="copyright">
+          <div class="col-md-12 text-center">
+            <p>&copy; Copyright JINMAN KIM</p>
+          </div>
+      
+        </footer>
     </main>
 
     <!-- JavaScript -->
@@ -155,6 +200,7 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="js/typed.js"></script>
     <script src="js/main.js"></script>
 
